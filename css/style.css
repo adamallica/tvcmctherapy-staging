@@ -1065,7 +1065,7 @@ a.therapist-tile:hover .therapist-tile-name h3 {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
   }
-  nav { position: relative; }
+  nav { position: static; }
   .hamburger { display: flex; }
   header { position: relative; }
 
