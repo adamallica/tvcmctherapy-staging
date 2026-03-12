@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Temecula Valley Counseling & Mindfulness Center</title>
+  <meta name="description" content="Get in touch with Temecula Valley Counseling and Mindfulness Center to schedule a consultation or ask any questions.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────── -->
+<header>
+  <div class="header-inner">
+    <a class="logo-wrap" href="index.html">
+      <img src="images/logo.png" alt="Temecula Valley Counseling and Mindfulness Center">
+    </a>
+    <nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="therapists.html">Therapists</a></li>
+        <li class="nav-cta"><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ── Page Hero ─────────────────────────────────── -->
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow">We're Here for You</span>
+    <h1>Get in Touch</h1>
+    <p>Reaching out is the first step. We'll get back to you within one business day.</p>
+  </div>
+</div>
+
+<!-- ── Contact Section ───────────────────────────── -->
+<section style="background: var(--cream);">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- ── Form ── -->
+      <div class="contact-form-wrap">
+        <h2>Request a Consultation</h2>
+        <p class="subtitle">Fill out the form below and our team will reach out to help you take the next step.</p>
+
+        <form id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Doe" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(951) 555-0000">
+          </div>
+
+          <div class="form-group">
+            <label for="service">I'm Interested In *</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option value="individual">Individual Therapy</option>
+              <option value="couples">Couples Therapy</option>
+              <option value="family">Family Therapy</option>
+              <option value="group">Group Therapy</option>
+              <option value="telehealth">Telehealth Sessions</option>
+              <option value="unsure">Not Sure — Help Me Decide</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="therapist">Preferred Therapist (Optional)</label>
+            <select id="therapist" name="therapist">
+              <option value="" selected>No preference / Not sure</option>
+              <option value="any">Any available therapist</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us a Little About What You're Looking For</label>
+            <textarea id="message" name="message" placeholder="You can share as much or as little as you'd like. There are no wrong answers here."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="hear">How Did You Hear About Us?</label>
+            <select id="hear" name="hear">
+              <option value="" selected>Select...</option>
+              <option value="google">Google / Search</option>
+              <option value="referral">Referral from someone I know</option>
+              <option value="insurance">Insurance Directory</option>
+              <option value="social">Social Media</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">Send My Request</button>
+
+          <p class="form-note">
+            Your privacy matters. All information is kept strictly confidential in accordance with HIPAA.
+            Submitting this form does not establish a client-therapist relationship.
+          </p>
+        </form>
+
+        <!-- Success Message (hidden initially) -->
+        <div id="success-msg" style="display:none; text-align: center; padding: 40px 20px;">
+          <div style="font-size: 3rem; margin-bottom: 16px;">&#10003;</div>
+          <h3 style="color: var(--teal); margin-bottom: 12px;">Thank You for Reaching Out</h3>
+          <p>We've received your message and will be in touch within one business day. We look forward to connecting with you.</p>
+        </div>
+      </div>
+
+      <!-- ── Sidebar ── -->
+      <div class="contact-sidebar">
+
+        <div class="info-card">
+          <h3>Contact Information</h3>
+
+          <div class="info-item">
+            <div class="icon">📍</div>
+            <div class="detail">
+              <strong>Location</strong>
+              <span>Temecula, CA</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">📞</div>
+            <div class="detail">
+              <strong>Phone</strong>
+              <span><a href="tel:">(000) 000-0000</a></span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">✉️</div>
+            <div class="detail">
+              <strong>Email</strong>
+              <span><a href="mailto:info@tvcmctherapy.com">info@tvcmctherapy.com</a></span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">🕐</div>
+            <div class="detail">
+              <strong>Office Hours</strong>
+              <span>Monday – Friday: 9am – 6pm<br>Saturday: By appointment</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">💻</div>
+            <div class="detail">
+              <strong>Telehealth</strong>
+              <span>Available for all clients</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3>Insurance &amp; Fees</h3>
+          <p style="font-size: 0.92rem;">
+            We accept a variety of insurance plans. Please contact us to verify your coverage
+            before your first appointment. Sliding scale fees may be available.
+          </p>
+          <p style="font-size: 0.92rem; margin: 0;">
+            We believe financial barriers should not prevent anyone from accessing care.
+            <strong>Ask us about our options.</strong>
+          </p>
+        </div>
+
+        <div class="crisis-card">
+          <h4>In Crisis?</h4>
+          <p>
+            If you or someone you know is in immediate danger, please call
+            <a href="tel:911">911</a>.<br><br>
+            For mental health crisis support, call or text
+            <a href="tel:988">988</a> (Suicide &amp; Crisis Lifeline) — available 24/7.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="TVCMC Logo">
+        <p>Temecula Valley Counseling and Mindfulness Center — providing compassionate, professional mental health care to individuals, couples, families, and groups in the Temecula Valley.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="therapists.html">Our Therapists</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Contact</h4>
+        <p><a href="contact.html">Request an Appointment</a></p>
+        <p>Temecula, CA</p>
+        <br>
+        <p style="font-size:0.82rem; color: rgba(255,255,255,0.4);">
+          If you are in crisis, please call or text <strong style="color:rgba(255,255,255,0.65)">988</strong> or call <strong style="color:rgba(255,255,255,0.65)">911</strong>.
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Temecula Valley Counseling and Mindfulness Center. All rights reserved. | Site by <a href="#" style="color: rgba(255,255,255,0.5);">TVT</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  hamburger.addEventListener('click', () => navMenu.classList.toggle('open'));
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById('contact-form').style.display = 'none';
+    document.getElementById('success-msg').style.display = 'block';
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Therapists | Temecula Valley Counseling & Mindfulness Center</title>
+  <meta name="description" content="Meet the compassionate, experienced therapists at Temecula Valley Counseling and Mindfulness Center.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── Header ─────────────────────────────────────── -->
+<header>
+  <div class="header-inner">
+    <a class="logo-wrap" href="index.html">
+      <img src="images/logo.png" alt="Temecula Valley Counseling and Mindfulness Center">
+    </a>
+    <nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="therapists.html" class="active">Therapists</a></li>
+        <li class="nav-cta"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ── Page Hero ─────────────────────────────────── -->
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Our Team</span>
+    <h1>Meet Our Therapists</h1>
+    <p>Compassionate, experienced clinicians dedicated to supporting your journey toward healing and well-being.</p>
+  </div>
+</div>
+
+<!-- ── Therapists Photo Grid ───────────────────────── -->
+<section style="background: var(--cream);">
+  <div class="container">
+
+    <div class="section-heading">
+      <p>
+        Each of our therapists brings a unique blend of training, lived experience, and genuine care
+        to their work. Click on a photo to learn more about each therapist.
+      </p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="therapist-photo-grid">
+
+      <!-- ── Darcie Dunlop ── -->
+      <a href="darcie-dunlop.html" class="therapist-tile">
+        <div class="therapist-tile-img">
+          <img src="images/darcie.png" alt="Darcie Dunlop, LMFT">
+        </div>
+        <div class="therapist-tile-name">
+          <h3>Darcie Dunlop</h3>
+          <span>LMFT &bull; Clinical Director</span>
+        </div>
+      </a>
+
+      <!-- ── Placeholder 2 ── -->
+      <div class="therapist-tile therapist-tile--placeholder">
+        <div class="therapist-tile-img">
+          <div class="therapist-photo-placeholder">
+            <div class="initials">TH</div>
+          </div>
+        </div>
+        <div class="therapist-tile-name">
+          <h3>Coming Soon</h3>
+          <span>Bio in progress</span>
+        </div>
+      </div>
+
+      <!-- ── Placeholder 3 ── -->
+      <div class="therapist-tile therapist-tile--placeholder">
+        <div class="therapist-tile-img">
+          <div class="therapist-photo-placeholder">
+            <div class="initials">TH</div>
+          </div>
+        </div>
+        <div class="therapist-tile-name">
+          <h3>Coming Soon</h3>
+          <span>Bio in progress</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Add more therapist tiles above this comment as needed -->
+
+    <div style="text-align: center; margin-top: 56px; padding: 36px; background: var(--warm-white); border-radius: 16px; border: 1px solid var(--border);">
+      <h3 style="margin-bottom: 12px;">Not Sure Who to See?</h3>
+      <p style="max-width: 480px; margin: 0 auto 24px;">
+        Our intake team is happy to help match you with the right therapist based on
+        your needs, preferences, and goals. Just reach out — we'll guide you.
+      </p>
+      <a href="contact.html" class="btn btn-primary">Talk to Us</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="TVCMC Logo">
+        <p>Temecula Valley Counseling and Mindfulness Center — providing compassionate, professional mental health care to individuals, couples, families, and groups in the Temecula Valley.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="therapists.html">Our Therapists</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Contact</h4>
+        <p><a href="contact.html">Request an Appointment</a></p>
+        <p>Temecula, CA</p>
+        <br>
+        <p style="font-size:0.82rem; color: rgba(255,255,255,0.4);">
+          If you are in crisis, please call or text <strong style="color:rgba(255,255,255,0.65)">988</strong> or call <strong style="color:rgba(255,255,255,0.65)">911</strong>.
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Temecula Valley Counseling and Mindfulness Center. All rights reserved. | Site by <a href="#" style="color: rgba(255,255,255,0.5);">TVT</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  hamburger.addEventListener('click', () => navMenu.classList.toggle('open'));
+</script>
+</body>
+</html>
