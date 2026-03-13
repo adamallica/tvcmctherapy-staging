@@ -240,7 +240,7 @@ nav ul li a.active {
   filter: drop-shadow(0 8px 24px rgba(58,138,143,0.18));
 }
 
-.hero-text-col { flex: 1; }
+.hero-text-col { max-width: 560px; }
 
 .hero-text-col .hero-eyebrow { display: inline-block; }
 
