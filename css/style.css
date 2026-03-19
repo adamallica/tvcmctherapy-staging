@@ -6,19 +6,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap');
 
 :root {
-  --teal:        #3A8A8F;
-  --teal-dark:   #2A6B70;
-  --teal-light:  #EBF5F5;
-  --gold:        #C9A227;
-  --gold-light:  #F5EDD3;
-  --sage:        #7A9E7E;
-  --cream:       #FAF7F2;
+  --teal:        #1B6FA8;
+  --teal-dark:   #145A8A;
+  --teal-light:  #E3F2FA;
+  --gold:        #2D7D5E;
+  --gold-light:  #E5F5EE;
+  --sage:        #4A9B7A;
+  --cream:       #F5F9FC;
   --warm-white:  #FFFFFF;
-  --text-dark:   #2C3E35;
-  --text-mid:    #4A5D53;
-  --text-light:  #7A8F83;
-  --border:      #DDE8E0;
-  --shadow:      rgba(58, 138, 143, 0.12);
+  --text-dark:   #1A3A50;
+  --text-mid:    #3A5570;
+  --text-light:  #6A85A0;
+  --border:      #C5DCF0;
+  --shadow:      rgba(27, 111, 168, 0.12);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -138,8 +138,10 @@ nav ul li a.active {
 
 /* ── Hero ───────────────────────────────────────── */
 .hero {
-  background: linear-gradient(135deg, #EBF5F5 0%, #F5EDD3 50%, #EBF5F5 100%);
-  padding: 100px 0 80px;
+  background-image: url('../images/Peacock 1.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  padding: 160px 0 140px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -149,7 +151,7 @@ nav ul li a.active {
   content: '';
   position: absolute;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233A8A8F' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background: rgba(16, 38, 60, 0.62);
   pointer-events: none;
 }
 
@@ -157,8 +159,8 @@ nav ul li a.active {
 
 .hero-eyebrow {
   display: inline-block;
-  background: var(--gold-light);
-  color: var(--gold);
+  background: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.95);
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.12em;
@@ -166,24 +168,24 @@ nav ul li a.active {
   padding: 6px 16px;
   border-radius: 20px;
   margin-bottom: 24px;
-  border: 1px solid #E0C86A;
+  border: 1px solid rgba(255,255,255,0.35);
 }
 
 .hero h1 {
   margin-bottom: 20px;
-  color: var(--text-dark);
+  color: #fff;
 }
 
 .hero h1 em {
   font-style: italic;
-  color: var(--teal);
+  color: #80DDB5;
 }
 
 .hero-subtitle {
   font-size: 1.15rem;
-  max-width: 600px;
+  max-width: 640px;
   margin: 0 auto 36px;
-  color: var(--text-mid);
+  color: rgba(255,255,255,0.88);
 }
 
 .btn {
@@ -1076,4 +1078,193 @@ a.therapist-tile:hover .therapist-tile-name h3 {
   .hero { padding: 64px 0 56px; }
 
   .contact-form-wrap { padding: 28px 20px; }
+}
+
+/* ── Hero outline button (white variant) ────────── */
+.btn-outline-light {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.7);
+}
+.btn-outline-light:hover {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ── Welcome Section ────────────────────────────── */
+.welcome-section { background: var(--warm-white); }
+
+.welcome-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.welcome-text .eyebrow {
+  display: inline-block;
+  color: var(--teal);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.welcome-text h2 { margin-bottom: 20px; }
+.welcome-text p  { font-size: 1.02rem; }
+
+.welcome-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 56px var(--shadow);
+}
+
+.welcome-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Poetry / Inspiration Section ───────────────── */
+.poetry-section {
+  background: linear-gradient(140deg, #10263C 0%, #0E3028 55%, #10263C 100%);
+  padding: 100px 0;
+}
+
+.poetry-section .section-heading .eyebrow,
+.poetry-section .section-heading h2,
+.poetry-section .section-heading p { color: #fff; }
+
+.poetry-section .divider {
+  background: linear-gradient(90deg, #80DDB5, #5BA3D4);
+}
+
+.quote-banner {
+  background: rgba(255,255,255,0.06);
+  border-left: 3px solid #80DDB5;
+  padding: 28px 36px;
+  margin-bottom: 56px;
+  border-radius: 0 12px 12px 0;
+}
+
+.quote-banner p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.92);
+  margin: 0;
+}
+
+.quote-banner .attr {
+  display: block;
+  margin-top: 12px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  color: #80DDB5;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.poems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.poem-card {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 16px;
+  padding: 36px 30px;
+  backdrop-filter: blur(6px);
+}
+
+.poem-card .poem-title {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: #80DDB5;
+  margin-bottom: 18px;
+}
+
+.poem-card .poem-text {
+  color: rgba(255,255,255,0.87);
+  font-size: 0.96rem;
+  line-height: 1.9;
+  white-space: pre-line;
+  margin-bottom: 20px;
+}
+
+.poem-card .poem-attribution {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ── CTA with Peacock background ─────────────────── */
+.cta-peacock {
+  background-image: url('../images/Peacock 3.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border: none;
+}
+
+.cta-peacock::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 38, 60, 0.68);
+}
+
+.cta-peacock .container { position: relative; z-index: 1; }
+.cta-peacock h2,
+.cta-peacock p { color: #fff; }
+
+/* ── Groups highlight box ────────────────────────── */
+.groups-section { background: var(--cream); }
+
+.groups-box {
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 48px;
+  margin-top: 48px;
+}
+
+.groups-box h3 {
+  color: var(--teal-dark);
+  margin-bottom: 16px;
+}
+
+.groups-box p { font-size: 1.02rem; }
+
+.group-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.group-card {
+  background: var(--teal-light);
+  border-radius: 14px;
+  padding: 28px 24px;
+  border-left: 4px solid var(--teal);
+}
+
+.group-card h4 { color: var(--teal-dark); margin-bottom: 10px; }
+.group-card p  { font-size: 0.95rem; margin: 0; }
+
+@media (max-width: 900px) {
+  .welcome-inner { grid-template-columns: 1fr; gap: 40px; }
+  .welcome-image { display: none; }
+  .group-cards   { grid-template-columns: 1fr; }
 }
