@@ -151,7 +151,7 @@ nav ul li a.active {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(16, 38, 60, 0.62);
+  background: rgba(16, 38, 60, 0.42);
   pointer-events: none;
 }
 
