@@ -182,10 +182,10 @@ nav ul li a.active {
 }
 
 .hero-subtitle {
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   max-width: 640px;
   margin: 0 auto 36px;
-  color: var(--text-mid);
+  color: #000;
 }
 
 .btn {
