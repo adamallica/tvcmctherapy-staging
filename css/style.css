@@ -151,7 +151,7 @@ nav ul li a.active {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(16, 38, 60, 0.42);
+  background: rgba(255, 255, 255, 0.58);
   pointer-events: none;
 }
 
@@ -159,8 +159,8 @@ nav ul li a.active {
 
 .hero-eyebrow {
   display: inline-block;
-  background: rgba(255,255,255,0.15);
-  color: rgba(255,255,255,0.95);
+  background: var(--gold-light);
+  color: var(--gold);
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.12em;
@@ -168,24 +168,24 @@ nav ul li a.active {
   padding: 6px 16px;
   border-radius: 20px;
   margin-bottom: 24px;
-  border: 1px solid rgba(255,255,255,0.35);
+  border: 1px solid var(--gold);
 }
 
 .hero h1 {
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--text-dark);
 }
 
 .hero h1 em {
   font-style: italic;
-  color: #80DDB5;
+  color: var(--teal);
 }
 
 .hero-subtitle {
   font-size: 1.15rem;
   max-width: 640px;
   margin: 0 auto 36px;
-  color: rgba(255,255,255,0.88);
+  color: var(--text-mid);
 }
 
 .btn {
