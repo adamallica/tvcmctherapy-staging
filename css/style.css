@@ -6,19 +6,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap');
 
 :root {
-  --teal:        #1B6FA8;
-  --teal-dark:   #145A8A;
-  --teal-light:  #E3F2FA;
+  --teal:        #2E4A8A;
+  --teal-dark:   #23396B;
+  --teal-light:  #E6E9F5;
   --gold:        #2D7D5E;
   --gold-light:  #E5F5EE;
   --sage:        #4A9B7A;
   --cream:       #F5F9FC;
   --warm-white:  #FFFFFF;
-  --text-dark:   #1A3A50;
-  --text-mid:    #3A5570;
-  --text-light:  #6A85A0;
-  --border:      #C5DCF0;
-  --shadow:      rgba(27, 111, 168, 0.12);
+  --text-dark:   #15354A;
+  --text-mid:    #34506A;
+  --text-light:  #5F7D96;
+  --border:      #B8D4E8;
+  --shadow:      rgba(12, 98, 145, 0.12);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -61,8 +61,8 @@ section { padding: 80px 0; }
 
 /* ── Header & Nav ───────────────────────────────── */
 header {
-  background: var(--warm-white);
-  border-bottom: 1px solid var(--border);
+  background: var(--teal);
+  border-bottom: 1px solid var(--teal-dark);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -98,23 +98,23 @@ nav ul li a {
   font-size: 0.9rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--text-mid);
+  color: var(--warm-white);
   transition: background 0.2s, color 0.2s;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-  background: var(--teal-light);
-  color: var(--teal-dark);
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--warm-white);
 }
 
 .nav-cta a {
-  background: var(--teal) !important;
-  color: var(--warm-white) !important;
+  background: var(--warm-white) !important;
+  color: var(--teal) !important;
   border-radius: 6px;
 }
 .nav-cta a:hover {
-  background: var(--teal-dark) !important;
+  background: var(--teal-light) !important;
 }
 
 /* Hamburger */
@@ -131,7 +131,7 @@ nav ul li a.active {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--teal-dark);
+  background: var(--warm-white);
   border-radius: 2px;
   transition: all 0.3s;
 }
@@ -1268,4 +1268,22 @@ a.therapist-tile:hover .therapist-tile-name h3 {
   .welcome-inner { grid-template-columns: 1fr; gap: 40px; }
   .welcome-image { display: none; }
   .group-cards   { grid-template-columns: 1fr; }
+}
+
+/* =====================
+   SCROLL REVEAL
+   ===================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
 }
